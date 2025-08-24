@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Health Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>System Health Dashboard</h1>
+    </header>
+    <main>
+        <div class="controls">
+            <label for="os-filter">Filter by OS:</label>
+            <select id="os-filter">
+                <option value="all">All</option>
+                <option value="Windows">Windows</option>
+                <option value="Darwin">macOS</option>
+                <option value="Linux">Linux</option>
+            </select>
+            <label for="status-filter">Filter by Status:</label>
+            <select id="status-filter">
+                <option value="all">All</option>
+                <option value="ok">OK</option>
+                <option value="issue">Issue</option>
+            </select>
+        </div>
+        <section id="machines-list">
+            </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
