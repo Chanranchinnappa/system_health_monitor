@@ -10,7 +10,7 @@ import uuid
 # Configuration
 API_ENDPOINT = "http://127.0.0.1:5000/api/v1/health"
 MACHINE_ID = str(uuid.uuid4())
-INTERVAL = 60 * 1 # 1 minutes
+INTERVAL = 30 * 1 # 30 seconds
 
 def get_system_info():
     """Collects system health data."""
